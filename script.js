@@ -42,7 +42,7 @@ function calculate() {
         result = 'Extremely obese';
     }
 
-    let hasil=`You are <span class="text-green-600 font-semibold">${result}</span>`;
+    let hasil=`You are <span class="text-yellow-600 font-semibold">${result}</span>`;
 
     // Display the result
     document.getElementById('result').innerText = bmi;
@@ -52,3 +52,15 @@ function calculate() {
 
 
 
+function handleRadioChange(input) {
+    // Clear previous selections
+    document.getElementById('maleIndicator').classList.remove('bg-yellow-500');
+    document.getElementById('femaleIndicator').classList.remove('bg-yellow-500');
+
+    // Set current selection
+    if (input.id === 'm') {
+        document.getElementById('maleIndicator').classList.add('bg-yellow-500');
+    } else if (input.id === 'f') {
+        document.getElementById('femaleIndicator').classList.add('bg-yellow-500');
+    }
+}
