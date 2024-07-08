@@ -42,7 +42,7 @@ function calculate() {
         result = 'Extremely obese';
     }
 
-    let hasil=`You are <span class="text-blue-600 font-semibold">${result}</span>`;
+    let hasil=`You are <span class="text-green-600 font-semibold">${result}</span>`;
 
     // Display the result
     document.getElementById('result').innerText = bmi;

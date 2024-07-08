@@ -6,7 +6,7 @@
     <title>BMI Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center min-h-screen bg-blue-600">
+<body class="flex items-center justify-center min-h-screen bg-green-300">
     
     <div class="container mx-auto item flex justify-center">
         <div class="box w-96 bg-white rounded-lg text-center shadow-2xl p-8 ">
@@ -15,7 +15,7 @@
           <div class="content space-y-4">
             <div class="input bg-white shadow-lg rounded-lg p-4">
                 <label for="age" class="block text-base font-semibold text-black mb-4">Age</label>
-                <input type="text" class="text-input outline-none border-b border-blue-600 w-1/2 text-center text-xl font-nunito" id="age" autocomplete="off" required/>
+                <input type="text" class="text-input outline-none border-b border-green-600 w-1/2 text-center text-xl font-nunito" id="age" autocomplete="off" required/>
             </div>
 
             <div class="flex justify-around p-4 bg-white rounded-lg shadow-md">
@@ -33,19 +33,19 @@
             <div class="flex justify-around space-x-4">
                 <div class="bg-white shadow-lg rounded-lg py-5 mb-5">
                     <label for="height" class="block mb-2 text-base font-semibold text-gray-700">Height(cm)</label>
-                    <input type="number" id="height" class="outline-none border-b border-blue-600 w-1/2 text-center text-2xl font-nunito" required>
+                    <input type="number" id="height" class="outline-none border-b border-green-600 w-1/2 text-center text-2xl font-nunito" required>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-lg py-5 mb-5">
                     <label for="weight" class="block mb-2 text-base font-semibold text-gray-700">Weight(kg)</label>
-                    <input type="number" id="weight" class="outline-none border-b border-blue-600 w-1/2 text-center text-2xl font-nunito" required>
+                    <input type="number" id="weight" class="outline-none border-b border-green-600 w-1/2 text-center text-2xl font-nunito" required>
                 </div>
             </div>
-            <button class="bg-blue-500 w-full py-3  text-lg font-semibold text-white transition duration-500 rounded-lg hover:bg-blue-700" id="submit" onclick="calculate();">Calculate BMI</button>
+            <button class="bg-green-500 w-full py-3  text-lg font-semibold text-white transition duration-500 rounded-lg hover:bg-green-700" id="submit" onclick="calculate();">Calculate BMI</button>
           </div>
           <div class="mt-6 text-center">
             <p class="text-lg font-semibold text-gray-800">Your BMI is</p>
-            <div id="result" class="inline-block px-4 py-2 t-2 text-2xl font-extrabold text-blue-600 bg-gray-200 rounded-full">00.00</div>
+            <div id="result" class="inline-block px-4 py-2 t-2 text-2xl font-extrabold text-green-600 bg-gray-200 rounded-full">00.00</div>
             <p id="comment" class="mt-4 text-lg font-medium text-gray-700 border-dashed border-2 border-slate-900">
           </div>
         </div>
